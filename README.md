@@ -36,9 +36,13 @@ grub2 in one image (include boot iso files)
         # BIOS -> bootmgr(grub2img.ldr) -> bootmgr.win10(windows10)
 
 
-##### grub2img.cfg (windows10 example)
+##### grub2img.cfg 
 
-    cd /Boot
+    grub2img has the default config file, 
+    and you can use /boot/grub2img/grub2img.cfg to repacle
+
+    windows10 example:
+    cd /Boot        # if Boot already exist
     mkdir grub2img; cd grub2img
     vi grub2img.cfg : 
         #########################
