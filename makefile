@@ -11,7 +11,7 @@ modcommon = help ls echo cat search file linux boot reboot halt tar xzio gfxterm
 
 modefi = $(modcommon) linuxefi efi_gop efi_uga lvm part_apple part_bsd btrfs reiserfs affs afs bfs f2fs hfs hfsplus jfs zfs
 
-modpc = $(modcommon) ntldr linux16 biosdisk
+modpc = $(modcommon) ntldr linux16 biosdisk vbe vga
 
 all: $(efi) $(ldr)
 
