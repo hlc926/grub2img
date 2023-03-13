@@ -24,14 +24,14 @@ grub2 in one image (include boot iso files)
 
 ##### windows10 (x86_64-efi)
 
-    cd /EFI/BOOT/					# maybe has System reserved partition
+    cd /EFI/BOOT/		# maybe has System reserved partition
     mv bootx64.efi bootx64.efi.win10
     cp grub2img.efi bootx64.efi     
         # BIOS UEFI -> bootx64.efi(grub2img.efi) -> bootmgfw.efi(windows10)
 
 ##### windows10 (i386-pc)
 
-    mv bootmgr bootmgr.win10		# maybe has System reserved partition
+    mv bootmgr bootmgr.win10	# maybe has System reserved partition
     cp grub2img.ldr bootmgr
         # BIOS -> bootmgr(grub2img.ldr) -> bootmgr.win10(windows10)
 
@@ -42,7 +42,7 @@ grub2 in one image (include boot iso files)
     and you can use /boot/grub2img/grub2img.cfg to repacle
 
     windows10 example:
-    cd /Boot        # if Boot already exist		# windows partition first
+    cd /Boot	# if Boot already exist		# windows partition first
     mkdir grub2img; cd grub2img
     vi grub2img.cfg : 
         #########################
